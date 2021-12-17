@@ -11,7 +11,7 @@ export default class ClassManager {
 
     constructor(el: Element, settings: ClassManagerSettings) {
         if (!(el instanceof Element)) {
-            throw new Error("Invalid element");
+            throw new Error("Unable to register, not an Element");
         }
         this._el = el;
         this._settings = ClassManager.parseSettings(settings, false);
