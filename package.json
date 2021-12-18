@@ -1,0 +1,25 @@
+{
+  "name": "wotsui-api",
+  "version": "2.0.0",
+  "description": "WotsUI API Classes and Utils",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "WotsUI",
+    "JS",
+    "TS",
+    "Util"
+  ],
+  "author": "Leonardo Scarfò",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
