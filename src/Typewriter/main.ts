@@ -217,7 +217,10 @@ export default class Typewriter {
     }
 
     /* static methods */
-    static parseSettings(obj: TypewriterSettings, onlyDefinedProps = true) {
+    static parseSettings(
+        obj: { [prop: string]: any } | TypewriterSettings,
+        onlyDefinedProps = true
+    ) {
         const settings: TypewriterSettings = {};
         if (typeof obj !== "object") return settings;
 

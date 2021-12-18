@@ -157,7 +157,10 @@ export default class ClassManager {
     }
 
     // static methods
-    static parseSettings(obj: ClassManagerSettings, onlyDefinedProps = true) {
+    static parseSettings(
+        obj: { [prop: string]: any } | ClassManagerSettings,
+        onlyDefinedProps = true
+    ) {
         const settings: ClassManagerSettings = {
             target: ClassManagerTarget.Self,
         };

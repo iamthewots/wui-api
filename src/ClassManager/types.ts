@@ -9,7 +9,6 @@ export interface ClassManagerSettings {
     ignoreIntervalOnAdd?: boolean;
     ignoreIntervalOnRemove?: boolean;
     emitEvents?: boolean;
-    [prop: string]: any;
 }
 
 export enum ClassManagerTarget {

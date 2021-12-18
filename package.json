@@ -1,6 +1,6 @@
 {
   "name": "wui-api",
-  "version": "0.5.0",
+  "version": "0.5.5",
   "description": "WotsUI API Classes and Utils",
   "main": "index.js",
   "types": "dist/index.d.ts",

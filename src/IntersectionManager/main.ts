@@ -21,7 +21,7 @@ export default class IntersectionManager {
         const elSettings = settings
             ? IntersectionManager.parseSettings(settings)
             : this._settings;
-        const observer = this.getObserver(elSettings.treshold);
+        const observer = this.getObserver(elSettings.threshold);
         if (observer) {
             observer.observe(el);
             this._settingsList.set(el, elSettings);
@@ -112,8 +112,8 @@ export default class IntersectionManager {
         const newElSettings = { ...elSettings, ...newSettings };
         const tresholdHasChanged =
             typeof settings === "object" &&
-            typeof settings.treshold === "number" &&
-            newSettings.treshold !== elSettings.treshold;
+            typeof settings.threshold === "number" &&
+            newSettings.threshold !== elSettings.threshold;
         if (tresholdHasChanged) {
             const actualObs = this.getObserver(elSettings.threshold);
             if (actualObs) {
@@ -122,18 +122,18 @@ export default class IntersectionManager {
             this._settingsList.set(el, newElSettings);
         } else {
             /* treshould would default to 1 */
-            newElSettings.treshold = elSettings.treshold;
+            newElSettings.threshold = elSettings.threshold;
             this._settingsList.set(el, newElSettings);
         }
     }
 
     /* Static methods */
     static parseSettings(
-        obj: IntersectionManagerSettings,
+        obj: { [prop: string]: any } | IntersectionManagerSettings,
         onlyDefinedProps = true
     ) {
         const settings: IntersectionManagerSettings = {
-            treshold: 1,
+            threshold: 1,
         };
         if (typeof obj !== "object") return settings;
 
