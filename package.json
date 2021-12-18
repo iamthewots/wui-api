@@ -1,6 +1,6 @@
 {
   "name": "wotsui-api",
-  "version": "2.0.0",
+  "version": "0.1.0",
   "description": "WotsUI API Classes and Utils",
   "main": "index.js",
   "types": "dist/index.d.ts",
