@@ -61,10 +61,16 @@ export default class IntersectionManager {
             : settings.intersectionClass;
         if (classToAdd) el.classList.add(classToAdd);
         if (classToRemove) el.classList.remove(classToRemove);
-        if (entry.isIntersecting && settings.intersectionHandler) {
+        if (
+            entry.isIntersecting &&
+            typeof settings.intersectionHandler === "function"
+        ) {
             settings.intersectionHandler(entry);
         }
-        if (!entry.isIntersecting && settings.noIntersectionHandler) {
+        if (
+            !entry.isIntersecting &&
+            typeof settings.noIntersectionHandler === "function"
+        ) {
             settings.noIntersectionHandler(entry);
         }
         return settings;
