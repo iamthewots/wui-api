@@ -2,7 +2,7 @@ import {
     ClassManagerMethod,
     ClassManagerSettings,
     ClassManagerTarget,
-} from "./types";
+} from "./types.js";
 
 export default class ClassManager {
     protected _el: Element;

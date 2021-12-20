@@ -1,6 +1,6 @@
-export { default as ClassManager } from "./ClassManager/main";
-export * from "./ClassManager/types";
-export { default as IntersectionManager } from "./IntersectionManager/main";
-export * from "./IntersectionManager/types";
-export { default as Typewriter } from "./Typewriter/main";
-export * from "./Typewriter/types";
+export { default as ClassManager } from "./ClassManager/main.js";
+export * from "./ClassManager/types.js";
+export { default as IntersectionManager } from "./IntersectionManager/main.js";
+export * from "./IntersectionManager/types.js";
+export { default as Typewriter } from "./Typewriter/main.js";
+export * from "./Typewriter/types.js";

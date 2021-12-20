@@ -1,4 +1,4 @@
-import { IntersectionManagerSettings } from "./types";
+import { IntersectionManagerSettings } from "./types.js";
 
 /**
  * @author Leonardo Scarfò

@@ -3,7 +3,7 @@ import {
     TypewriterElementStatus,
     TypewriterSettings,
     TypewriterTextNodeData,
-} from "./types";
+} from "./types.js";
 
 export default class Typewriter {
     private _settings: TypewriterSettings;

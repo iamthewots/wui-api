@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Playground</title>
+    </head>
+    <style>
+        .spacer {
+            height: 100vh;
+        }
+        #cm-target {
+            transition: all 0.25s ease;
+        }
+        .class1 {
+            background-color: blue;
+        }
+        .class2 {
+            background-color: pink;
+        }
+    </style>
+    <script src="./test.js" type="module" defer></script>
+    <body>
+        <h1>Typewriter</h1>
+        <button id="write">Write</button>
+        <button id="delete">Delete</button>
+        <button id="stop">Stop</button>
+        <button id="restore">Restore</button>
+        <button id="clear">Clear</button>
+        <div id="tw-target">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            consequatur debitis, fugiat voluptas ullam aliquid asperiores itaque
+            nemo, eveniet nulla deleniti quis ducimus eaque! Obcaecati similique
+            quis omnis quos assumenda dolore vero, cumque dolorum labore soluta
+            ipsa eaque reprehenderit dolor minima. Veritatis, adipisci deserunt
+            placeat nemo culpa repellat modi, obcaecati deleniti debitis
+            aspernatur magni. Illum nulla rem distinctio voluptas culpa
+            doloribus? Repellendus voluptatibus possimus commodi dignissimos.
+            Rem quod necessitatibus sunt illo dolor maiores, molestias accusamus
+            asperiores autem nesciunt exercitationem quos iste nemo commodi
+            aliquam ipsam. At libero doloremque dicta, ea cum esse velit,
+            nostrum facilis nisi soluta, vitae nam sed.
+        </div>
+        <br />
+        <h1>Class Manager</h1>
+        <button id="add">Add</button>
+        <button id="remove">Remove</button>
+        <input type="text" id="class-name" placeholder="class name" />
+        <div id="cm-target">Hi, test your class on me!</div>
+        <br />
+        <h1>Intersection Manager</h1>
+        <div class="spacer">Scroll to test intersection</div>
+        <div id="im-target">Alert intersection state</div>
+    </body>
+</html>
