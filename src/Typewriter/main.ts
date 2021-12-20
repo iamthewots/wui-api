@@ -38,6 +38,7 @@ export default class Typewriter {
     }
 
     clearText(el: Element) {
+        this.stopText(el);
         if (!el || !(el instanceof Element)) return;
         const data = this._elementsData.get(el);
         if (!data) return;
@@ -86,6 +87,7 @@ export default class Typewriter {
     }
 
     restoreText(el: Element) {
+        this.stopText(el);
         if (!el || !(el instanceof Element)) return;
         const data = this._elementsData.get(el);
         if (!data) return;
